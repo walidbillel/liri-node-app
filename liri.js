@@ -12,10 +12,19 @@ var Spotify = require('node-spotify-api');
 var spotify = new Spotify(keys.spotify);
 var client = new Twitter(keys.twitter);
 
-// console.log(tweet);
 
+// Setting up our arguments
 var thingTodo = process.argv[2];
-var withWhat = process.argv[3];
+var withWhat = process.argv;
+var inputSearch = "";
+for (var i = 3; i < withWhat.length; i++) {
+    if (i > 3 && i < withWhat.length) {
+        inputSearch = inputSearch + "+" + withWhat[i];
+    } else {
+        inputSearch += withWhat[i];
+    }
+}
+console.log(inputSearch);
 
 
 
@@ -25,29 +34,53 @@ function tweets() {
     client.get('statuses/user_timeline', params, function (error, tweets, response) {
         if (!error) {
             for (var i = 0; i < tweets.length; i++) {
+                // Setting up the data in a variable so we can append it to te file later
+                var dateCreated = tweets[i].created_at;
+                var tweetText = JSON.stringify(tweets[i].text);
+                var dataDisplayed = dateCreated + "\n" + tweetText + "\n" + brokenLine + "\n";
+                console.log(dataDisplayed);
 
-                console.log("----------------------------------\n");
-                console.log(tweets[i].created_at);
-                console.log(JSON.stringify(tweets[i].text));  // Raw response object. 
-
+                // Appending the entry to the log.txt file
+                fs.appendFile("log.txt", dataDisplayed, function (err) {
+                    if (err) {
+                        console.log(err);
+                    }
+                });
             }
         }
     });
 }
 
+// this will be used to help use organize our display
+var brokenLine = "----------------------------------------------------------------------------------------------------------------------";
 
+// Utilizing the spotify npm to retrieve data 
 function spotifyThisSong() {
 
-
-    spotify.search({ type: 'track', query: withWhat, limit: 10 }, function (err, data) {
+    spotify.search({ type: 'track', query: inputSearch, limit: 10 }, function (err, data) {
         if (err) {
-            return console.log('Error occurred: ' + err);
+            return console.log(err);
         }
-        var dataFixed = JSON.stringify(data, null, 2);
-        console.log(dataFixed);
+
+        // Setting up the data in a variable so we can append it to te file later
+        var artistName = "Artist Name: " + data.tracks.items[0].artists[0].name;
+        var songName = "Song Name: " + data.tracks.items[0].name;
+        var albumName = "Album Name: " + data.tracks.items[0].album.name;
+        var previewUrl = "Preview Url: " + data.tracks.items[0].preview_url;
+        var dataDisplayed = artistName + "\n" + songName + "\n" + albumName + "\n" + previewUrl + "\n" + brokenLine + "\n";
+        console.log(dataDisplayed);
+
+        // Appending the entry to the log.txt file
+        fs.appendFile("log.txt", dataDisplayed, function (err) {
+            if (err) {
+                console.log(err);
+            }
+        });
+
     });
 }
 
+// Creating a funtion that will read the random file then set up the arguments from the file and run the search
 function doWhatItSays() {
     fs.readFile("random.txt", "utf8", function (err, data) {
         if (err) {
@@ -56,48 +89,41 @@ function doWhatItSays() {
 
         var dataArr = data.split(",");
         thingTodo = dataArr[0];
-        withWhat = dataArr[1];
-
+        inputSearch = JSON.parse(dataArr[1]);
         spotifyThisSong();
-    })
+    });
 }
 
+// Utilizing the request npm to access the omdb API and retrieve the data needed
 function movieThis() {
-    request("http://www.omdbapi.com/?t=" + withWhat + "&y=&plot=short&apikey=trilogy", function (error, response, body) {
+
+    request("http://www.omdbapi.com/?t=" + inputSearch + "&y=&plot=short&apikey=trilogy", function (error, response, body) {
 
         // If there were no errors and the response code was 200 (i.e. the request was successful)...
         if (!error && response.statusCode === 200) {
 
-            // Then we print out the imdbRating
-            console.log(JSON.stringify(body, null, 2));
+            //  Setting up the data in a variable so we can append it to te file later
+            var data = JSON.parse(body, null, 2);
+            var movieTitle = "Title: " + data.Title;
+            var releaseYear = "Release Year: " + data.Year;
+            var imbdRating = "imbdRating: " + data.imdbRating;
+            var rTomato = "Rotten Tomatoes Rating: " + data.Ratings[1].Value;
+            var movieCountry = "Country where the movie was produced: " + data.Country;
+            var movieLanguage = "Language of the movie: " + data.Language;
+            var moviePot = "Plot: " + data.Plot;
+            var movieActors = "Actors: " + data.Actors;
+            var dataDisplayed = movieTitle + "\n" + releaseYear + "\n" + imbdRating + "\n" + rTomato + "\n" + movieLanguage + "\n" + movieCountry + "\n" + moviePot + "\n" + movieActors + "\n" + brokenLine + "\n";
+            console.log(dataDisplayed);
+
+            // Appending the entry to the log.txt file
+            fs.appendFile("log.txt", dataDisplayed, function (err) {
+                if (err) {
+                    console.log(err);
+                }
+            });
         }
     });
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // switch that will check the first argument passed in the command line and executed based on the case
 switch (thingTodo) {
@@ -107,8 +133,8 @@ switch (thingTodo) {
         break;
 
     case "movie-this":
-        if (!withWhat) {
-            withWhat = "Mr.Nobody";
+        if (!inputSearch) {
+            inputSearch = "Mr.Nobody";
             movieThis();
         } else {
             movieThis();
@@ -116,8 +142,8 @@ switch (thingTodo) {
         break;
 
     case "spotify-this-song":
-        if (!withWhat) {
-            withWhat = "The Sign by Ace of Base";
+        if (!inputSearch) {
+            inputSearch = "The Sign by Ace of Base";
             spotifyThisSong();
         } else {
             spotifyThisSong();
@@ -128,6 +154,6 @@ switch (thingTodo) {
         doWhatItSays();
         break;
 
-    default: console.log("Hey liri user what zup");
+    default: console.log("Hey I'm Liri! What do you want me to do?");
 
 }
