@@ -24,7 +24,7 @@ for (var i = 3; i < withWhat.length; i++) {
         inputSearch += withWhat[i];
     }
 }
-console.log(inputSearch);
+// console.log(inputSearch);
 
 
 
@@ -38,7 +38,7 @@ function tweets() {
                 var dateCreated = tweets[i].created_at;
                 var tweetText = JSON.stringify(tweets[i].text);
                 var dataDisplayed = dateCreated + "\n" + tweetText + "\n" + brokenLine + "\n";
-                console.log(dataDisplayed);
+                console.log("\n" + dataDisplayed);
 
                 // Appending the entry to the log.txt file
                 fs.appendFile("log.txt", dataDisplayed, function (err) {
@@ -68,7 +68,7 @@ function spotifyThisSong() {
         var albumName = "Album Name: " + data.tracks.items[0].album.name;
         var previewUrl = "Preview Url: " + data.tracks.items[0].preview_url;
         var dataDisplayed = artistName + "\n" + songName + "\n" + albumName + "\n" + previewUrl + "\n" + brokenLine + "\n";
-        console.log(dataDisplayed);
+        console.log("\n" + dataDisplayed);
 
         // Appending the entry to the log.txt file
         fs.appendFile("log.txt", dataDisplayed, function (err) {
@@ -113,7 +113,7 @@ function movieThis() {
             var moviePot = "Plot: " + data.Plot;
             var movieActors = "Actors: " + data.Actors;
             var dataDisplayed = movieTitle + "\n" + releaseYear + "\n" + imbdRating + "\n" + rTomato + "\n" + movieLanguage + "\n" + movieCountry + "\n" + moviePot + "\n" + movieActors + "\n" + brokenLine + "\n";
-            console.log(dataDisplayed);
+            console.log("\n" + dataDisplayed);
 
             // Appending the entry to the log.txt file
             fs.appendFile("log.txt", dataDisplayed, function (err) {
@@ -154,6 +154,5 @@ switch (thingTodo) {
         doWhatItSays();
         break;
 
-    default: console.log("Hey I'm Liri! What do you want me to do?");
-
+    default: console.log("Hey I'm Liri! What do you want me to do? Type in the thingToDo");
 }
