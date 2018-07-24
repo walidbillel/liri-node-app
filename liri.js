@@ -90,9 +90,10 @@ function doWhatItSays() {
         var dataArr = data.split(",");
         thingTodo = dataArr[0];
         inputSearch = JSON.parse(dataArr[1]);
-        spotifyThisSong();
+        movieThis();
     });
 }
+
 
 // Utilizing the request npm to access the omdb API and retrieve the data needed
 function movieThis() {
