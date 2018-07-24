@@ -23,6 +23,7 @@ for (var i = 3; i < withWhat.length; i++) {
     } else {
         inputSearch += withWhat[i];
     }
+    
 }
 // console.log(inputSearch);
 

@@ -433,3 +433,40 @@ Song Name: Hey Ya! - Radio Mix / Club Mix
 Album Name: The Way You Move / Hey Ya!
 Preview Url: https://p.scdn.co/mp3-preview/6c69ee9ec863053388b7c06fea9f42a66775acbc?cid=59c0a1c0991440e89574631796f6a87c
 ----------------------------------------------------------------------------------------------------------------------
+Title: Titanic
+Release Year: 1997
+imbdRating: 7.8
+Rotten Tomatoes Rating: 88%
+Language of the movie: English, Swedish
+Country where the movie was produced: USA
+Plot: A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.
+Actors: Leonardo DiCaprio, Kate Winslet, Billy Zane, Kathy Bates
+----------------------------------------------------------------------------------------------------------------------
+Title: Star Wars: Episode IV - A New Hope
+Release Year: 1977
+imbdRating: 8.6
+Rotten Tomatoes Rating: 93%
+Language of the movie: English
+Country where the movie was produced: USA
+Plot: Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a Wookiee and two droids to save the galaxy from the Empire's world-destroying battle-station, while also attempting to rescue Princess Leia from the evil Darth Vader.
+Actors: Mark Hamill, Harrison Ford, Carrie Fisher, Peter Cushing
+----------------------------------------------------------------------------------------------------------------------
+Artist Name: Pink Floyd
+Song Name: Another Brick in the Wall, Pt. 2
+Album Name: The Wall
+Preview Url: https://p.scdn.co/mp3-preview/92210b01fcc6efa80008663c158baf79cf0d7b5f?cid=59c0a1c0991440e89574631796f6a87c
+----------------------------------------------------------------------------------------------------------------------
+Title: Star Wars: Episode IV - A New Hope
+Release Year: 1977
+imbdRating: 8.6
+Rotten Tomatoes Rating: 93%
+Language of the movie: English
+Country where the movie was produced: USA
+Plot: Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a Wookiee and two droids to save the galaxy from the Empire's world-destroying battle-station, while also attempting to rescue Princess Leia from the evil Darth Vader.
+Actors: Mark Hamill, Harrison Ford, Carrie Fisher, Peter Cushing
+----------------------------------------------------------------------------------------------------------------------
+Artist Name: Pink Floyd
+Song Name: Another Brick in the Wall, Pt. 2
+Album Name: The Wall
+Preview Url: https://p.scdn.co/mp3-preview/92210b01fcc6efa80008663c158baf79cf0d7b5f?cid=59c0a1c0991440e89574631796f6a87c
+----------------------------------------------------------------------------------------------------------------------
