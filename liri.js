@@ -90,8 +90,26 @@ function doWhatItSays() {
 
         var dataArr = data.split(",");
         thingTodo = dataArr[0];
-        inputSearch = JSON.parse(dataArr[1]);
-        movieThis();
+        inputSearch =(dataArr[1]);
+
+        switch(thingTodo) {
+            case "movie-this":
+            movieThis();
+            break;
+
+            case "spotify-this-song":
+            spotifyThisSong();
+            break;
+
+            case "my-tweets":
+            inputSearch = null;
+            tweets();
+            break;
+
+            default: console.log("write something in the random.txt");
+
+        }
+       
     });
 }
 

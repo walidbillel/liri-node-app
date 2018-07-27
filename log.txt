@@ -634,3 +634,94 @@ Country where the movie was produced: USA
 Plot: A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.
 Actors: Leonardo DiCaprio, Kate Winslet, Billy Zane, Kathy Bates
 ----------------------------------------------------------------------------------------------------------------------
+Title: Titanic
+Release Year: 1997
+imbdRating: 7.8
+Rotten Tomatoes Rating: 88%
+Language of the movie: English, Swedish
+Country where the movie was produced: USA
+Plot: A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.
+Actors: Leonardo DiCaprio, Kate Winslet, Billy Zane, Kathy Bates
+----------------------------------------------------------------------------------------------------------------------
+Fri Jul 13 16:08:11 +0000 2018
+"Splice that"
+----------------------------------------------------------------------------------------------------------------------
+Fri Jul 13 05:30:30 +0000 2018
+"Que Passa!"
+----------------------------------------------------------------------------------------------------------------------
+Fri Jul 13 16:06:09 +0000 2018
+"Gangster Paradise"
+----------------------------------------------------------------------------------------------------------------------
+Fri Jul 13 05:30:06 +0000 2018
+"Blahhh blahh blahh"
+----------------------------------------------------------------------------------------------------------------------
+Fri Jul 13 05:30:18 +0000 2018
+"Hey houloulou"
+----------------------------------------------------------------------------------------------------------------------
+Fri Jul 13 05:30:49 +0000 2018
+"Yeah I know no politics"
+----------------------------------------------------------------------------------------------------------------------
+Fri Jul 13 01:53:16 +0000 2018
+"Silence is the best replay to a fool"
+----------------------------------------------------------------------------------------------------------------------
+Fri Jul 13 03:41:13 +0000 2018
+"The only true wisdom is in knowing you know nothing. Socrates"
+----------------------------------------------------------------------------------------------------------------------
+Thu Jul 12 20:03:42 +0000 2018
+"I'm not a robot"
+----------------------------------------------------------------------------------------------------------------------
+Artist Name: Pink Floyd
+Song Name: Another Brick in the Wall, Pt. 2
+Album Name: The Wall
+Preview Url: https://p.scdn.co/mp3-preview/92210b01fcc6efa80008663c158baf79cf0d7b5f?cid=59c0a1c0991440e89574631796f6a87c
+----------------------------------------------------------------------------------------------------------------------
+Title: Star Wars: Episode IV - A New Hope
+Release Year: 1977
+imbdRating: 8.6
+Rotten Tomatoes Rating: 93%
+Language of the movie: English
+Country where the movie was produced: USA
+Plot: Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a Wookiee and two droids to save the galaxy from the Empire's world-destroying battle-station, while also attempting to rescue Princess Leia from the evil Darth Vader.
+Actors: Mark Hamill, Harrison Ford, Carrie Fisher, Peter Cushing
+----------------------------------------------------------------------------------------------------------------------
+Artist Name: Pink Floyd
+Song Name: Another Brick in the Wall, Pt. 2
+Album Name: The Wall
+Preview Url: https://p.scdn.co/mp3-preview/92210b01fcc6efa80008663c158baf79cf0d7b5f?cid=59c0a1c0991440e89574631796f6a87c
+----------------------------------------------------------------------------------------------------------------------
+Title: Pink Floyd: The Wall
+Release Year: 1982
+imbdRating: 8.0
+Rotten Tomatoes Rating: 71%
+Language of the movie: English
+Country where the movie was produced: UK
+Plot: A confined but troubled rock star descends into madness in the midst of his physical and social isolation from everyone.
+Actors: Bob Geldof, Christine Hargreaves, James Laurenson, Eleanor David
+----------------------------------------------------------------------------------------------------------------------
+Fri Jul 13 16:08:11 +0000 2018
+"Splice that"
+----------------------------------------------------------------------------------------------------------------------
+Fri Jul 13 16:06:09 +0000 2018
+"Gangster Paradise"
+----------------------------------------------------------------------------------------------------------------------
+Fri Jul 13 05:30:49 +0000 2018
+"Yeah I know no politics"
+----------------------------------------------------------------------------------------------------------------------
+Fri Jul 13 05:30:18 +0000 2018
+"Hey houloulou"
+----------------------------------------------------------------------------------------------------------------------
+Fri Jul 13 05:30:06 +0000 2018
+"Blahhh blahh blahh"
+----------------------------------------------------------------------------------------------------------------------
+Fri Jul 13 03:41:13 +0000 2018
+"The only true wisdom is in knowing you know nothing. Socrates"
+----------------------------------------------------------------------------------------------------------------------
+Fri Jul 13 01:53:16 +0000 2018
+"Silence is the best replay to a fool"
+----------------------------------------------------------------------------------------------------------------------
+Fri Jul 13 05:30:30 +0000 2018
+"Que Passa!"
+----------------------------------------------------------------------------------------------------------------------
+Thu Jul 12 20:03:42 +0000 2018
+"I'm not a robot"
+----------------------------------------------------------------------------------------------------------------------
