@@ -1,6 +1,9 @@
 # liri-node-app:
 This is a Command Line Interface Application that uses modules, and multiple packages. To use it you need to run node and install the npm packages from the package.json file. Enjoy!
 
+### App in Action 
+![GitHub Logo](/gif/liriapp.gif)
+
 ## npm packages used: 
 * Twitter 
 * Spotify 
