@@ -13,7 +13,7 @@ var spotify = new Spotify(keys.spotify);
 var client = new Twitter(keys.twitter);
 
 
-// Setting up our arguments
+// Setting up our arguments 
 var thingTodo = process.argv[2];
 var withWhat = process.argv;
 var inputSearch = "";
