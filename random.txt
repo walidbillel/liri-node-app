@@ -1,1 +1,1 @@
-my-tweets, "the wall"
+my-tweets
